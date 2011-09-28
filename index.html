@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>jQuery Table Filter</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.tablefilter.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('table').tableFilter({
+				filters: {
+					id: $('#id'),
+					name: $('#name'),
+					age: $('#age')
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+<div>
+
+<table>
+	<thead>
+		<tr>
+			<th>ID <input type="text" name="id" id="id" /></th>
+			<th>Name <input type="text" name="name" id="name" /></th>
+			<th>Age <input type="text" name="age" id="age" /></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="id">956107</td>
+			<td class="name">Bob</td>
+			<td class="age">35</td>
+		</tr>
+		<tr>
+			<td class="id">835109</td>
+			<td class="name">Jan</td>
+			<td class="age">46</td>
+		</tr>
+		<tr>
+			<td class="id">135174</td>
+			<td class="name">Tom</td>
+			<td class="age">24</td>
+		</tr>
+		<tr>
+			<td class="id">095723</td>
+			<td class="name">Sam</td>
+			<td class="age">25</td>
+		</tr>
+		<tr>
+			<td class="id">109475</td>
+			<td class="name">Rob</td>
+			<td class="age">65</td>
+		</tr>
+	</tbody>
+</table>
+
+</div>
+</body>
+</html>
