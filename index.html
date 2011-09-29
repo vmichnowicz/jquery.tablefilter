@@ -3,6 +3,13 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>jQuery Table Filter</title>
+	<style type="text/css">
+		body { font: 12px sans-serif; color: #555; }
+		table { border-collapse: collapse; margin: 0px auto; }
+		tbody td, thead th { border: 1px solid #efefef; padding: 5px; }
+		thead th { background-color: #efefef; border-color: #dedede; }
+		tfoot { font-size: 10px; color: #999; text-align: center; }
+	</style>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 	<script type="text/javascript" src="jquery.tablefilter.min.js"></script>
 	<script type="text/javascript">
@@ -23,11 +30,16 @@
 <table>
 	<thead>
 		<tr>
-			<th>ID <input type="text" name="id" id="id" /></th>
-			<th>Name <input type="text" name="name" id="name" /></th>
-			<th>Age <input type="text" name="age" id="age" /></th>
+			<th><label>ID <input type="text" name="id" id="id" /></label></th>
+			<th><label>Name <input type="text" name="name" id="name" /></label></th>
+			<th><label>Age <input type="text" name="age" id="age" /></label></th>
 		</tr>
 	</thead>
+	<tfoot>
+		<tr>
+			<td colspan="3">IDs, Names &amp; Ages &mdash; jQuery Table Filter</td>
+		</tr>
+	</tfoot>
 	<tbody>
 		<tr>
 			<td class="id">956107</td>
@@ -53,6 +65,31 @@
 			<td class="id">109475</td>
 			<td class="name">Rob</td>
 			<td class="age">65</td>
+		</tr>
+		<tr>
+			<td class="id">986209</td>
+			<td class="name">Zed</td>
+			<td class="age">64</td>
+		</tr>
+		<tr>
+			<td class="id">109471</td>
+			<td class="name">Ken</td>
+			<td class="age">10</td>
+		</tr>
+		<tr>
+			<td class="id">204782</td>
+			<td class="name">Hon</td>
+			<td class="age">28</td>
+		</tr>
+		<tr>
+			<td class="id">109368</td>
+			<td class="name">Yao</td>
+			<td class="age">49</td>
+		</tr>
+		<tr>
+			<td class="id">904613</td>
+			<td class="name">Ned</td>
+			<td class="age">64</td>
 		</tr>
 	</tbody>
 </table>
