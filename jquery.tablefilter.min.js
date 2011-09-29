@@ -3,7 +3,7 @@
  * Very simple jQuery table filter plugin
  *
  * Documentation at: https://github.com/vmichnowicz/jquery.tablefilter
- * Examples at: http://www.vmichnowicz.com/
+ * Examples at: http://www.vmichnowicz.com/examples/tablefilter/index.html
  *
  * Copyright (c) 2011 Victor Michnowicz
  *
