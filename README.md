@@ -2,6 +2,10 @@
 
 jQuery Table Filter is a *very* simple table filter plugin. The plugin includes almost no configuration options. Instead,it assumes you are going to build your table and filters a certian way.
 
+## Example ##
+
+View an example of jQuery Table Filter in action: http://www.vmichnowicz.com/examples/tablefilter/index.html
+
 ## How to Use ##
 
 The filter plugin assumes you are buliding your tables using standard (X)HTML with a `thead` and `tbody`. It also assumes that the table data you want to filter on has specific CSS classes assigned to them.
